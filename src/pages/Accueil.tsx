@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Mail, Phone, GraduationCap, Percent, BookOpen, ChevronRight, Copy, Check } from 'lucide-react';
+import { useState } from 'react';
+import { Percent, BookOpen, ChevronRight, Copy, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Simulateur from '../components/Simulateur';
 import logoSap from '../assets/logo-sap.png';
-import photoTom from '../assets/vidal-tom.JPG';
+import photoTom from '../assets/tom-vidal.jpg';
 
 const Accueil = () => {
   const [emailCopied, setEmailCopied] = useState(false);
