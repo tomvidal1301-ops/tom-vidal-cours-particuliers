@@ -15,7 +15,7 @@ export default function CreditImpot() {
     return (
         <div className="bg-spindle-50 text-spindle-900 min-h-screen">
             <div className="max-w-4xl mx-auto px-4 py-8">
-                
+
                 <div className="mb-6">
                     <Link to="/#services" className="text-spindle-800 hover:underline font-bold text-sm flex items-center gap-2">
                         ← Retour à l'accueil
@@ -29,7 +29,14 @@ export default function CreditImpot() {
                         <p className="text-spindle-600 mt-2">Comment fonctionne le crédit d’impôt pour le soutien scolaire à domicile</p>
                     </div>
                     <div className="flex flex-col items-end gap-2 shrink-0">
-                        <img src={logoSap} alt="Logo SAP" className="h-16 mix-blend-multiply" />
+                        <a
+                            href="https://www.servicesalapersonne.gouv.fr/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="transition-transform hover:scale-105 hover:opacity-80"
+                        >
+                            <img src={logoSap} alt="Logo officiel Services à la Personne" className="h-16 mix-blend-multiply" />
+                        </a>
                         <div className="flex items-center gap-2 text-xs font-semibold bg-white text-spindle-800 border border-spindle-200 px-3 py-1.5 rounded-xl">
                             Agrément n° SAP106318249
                         </div>
@@ -61,10 +68,10 @@ export default function CreditImpot() {
                                     <label htmlFor="hourly-rate" className="flex items-center gap-1">Tarif horaire convenu</label>
                                     <span className="text-spindle-800 font-bold font-mono">{rate} €/h</span>
                                 </div>
-                                <input 
-                                    type="range" id="hourly-rate" min="10" max="30" step="1" 
+                                <input
+                                    type="range" id="hourly-rate" min="10" max="30" step="1"
                                     value={rate} onChange={(e) => setRate(Number(e.target.value))}
-                                    className="w-full h-2 bg-spindle-100 rounded-lg appearance-none cursor-pointer accent-spindle-800" 
+                                    className="w-full h-2 bg-spindle-100 rounded-lg appearance-none cursor-pointer accent-spindle-800"
                                 />
                                 <span className="text-[10px] text-spindle-500">Le prix de base brut avant avantage fiscal.</span>
                             </div>
@@ -74,10 +81,10 @@ export default function CreditImpot() {
                                     <label htmlFor="hours-planned">Volume de cours estimé (à l'année)</label>
                                     <span className="text-spindle-800 font-bold font-mono">{hours} h</span>
                                 </div>
-                                <input 
-                                    type="range" id="hours-planned" min="10" max="150" step="2" 
+                                <input
+                                    type="range" id="hours-planned" min="10" max="150" step="2"
                                     value={hours} onChange={(e) => setHours(Number(e.target.value))}
-                                    className="w-full h-2 bg-spindle-100 rounded-lg appearance-none cursor-pointer accent-spindle-800" 
+                                    className="w-full h-2 bg-spindle-100 rounded-lg appearance-none cursor-pointer accent-spindle-800"
                                 />
                                 <span className="text-[10px] text-spindle-500">Référence : 2h de cours par semaine pendant 40 semaines scolaires = 80h.</span>
                             </div>
@@ -87,10 +94,10 @@ export default function CreditImpot() {
                                     <label htmlFor="parent-tax">Votre impôt sur le revenu habituel</label>
                                     <span className="text-spindle-800 font-bold font-mono">{tax.toLocaleString('fr-FR')} €</span>
                                 </div>
-                                <input 
-                                    type="range" id="parent-tax" min="0" max="10000" step="500" 
+                                <input
+                                    type="range" id="parent-tax" min="0" max="10000" step="500"
                                     value={tax} onChange={(e) => setTax(Number(e.target.value))}
-                                    className="w-full h-2 bg-spindle-100 rounded-lg appearance-none cursor-pointer accent-spindle-800" 
+                                    className="w-full h-2 bg-spindle-100 rounded-lg appearance-none cursor-pointer accent-spindle-800"
                                 />
                                 <span className="text-[10px] text-spindle-500">Que vous payiez 0 € d'impôts ou plus, l'aide de l'État s'applique de la même manière.</span>
                             </div>

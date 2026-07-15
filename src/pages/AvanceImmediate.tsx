@@ -5,7 +5,7 @@ export default function AvanceImmediate() {
     return (
         <div className="bg-spindle-50 text-spindle-900 min-h-screen">
             <div className="max-w-4xl mx-auto px-4 py-8">
-                
+
                 {/* Bouton Retour */}
                 <div className="mb-6">
                     <Link to="/#services" className="text-spindle-800 hover:underline font-bold text-sm flex items-center gap-2">
@@ -21,7 +21,14 @@ export default function AvanceImmediate() {
                         <p className="text-spindle-600 mt-2">Comment fonctionne l'avance immédiate du crédit d'impôt</p>
                     </div>
                     <div className="flex flex-col items-end gap-2 shrink-0">
-                        <img src={logoSap} alt="Logo SAP" className="h-16 mix-blend-multiply" />
+                        <a
+                            href="https://www.servicesalapersonne.gouv.fr/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="transition-transform hover:scale-105 hover:opacity-80"
+                        >
+                            <img src={logoSap} alt="Logo officiel Services à la Personne" className="h-16 mix-blend-multiply" />
+                        </a>
                         <div className="flex items-center gap-2 text-xs font-semibold bg-white text-spindle-800 border border-spindle-200 px-3 py-1.5 rounded-xl">
                             Déclaration n° SAP106318249
                         </div>
@@ -58,7 +65,7 @@ export default function AvanceImmediate() {
                 <h2 className="text-xl font-bold text-spindle-950 mb-4 flex items-center gap-2">
                     Parcours d'activation & Fonctionnement général
                 </h2>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     <div className="bg-white rounded-xl border border-spindle-200 p-5 shadow-sm flex flex-col">
                         <span className="bg-spindle-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider block w-fit mb-4">Étape 1 : Inscription</span>
