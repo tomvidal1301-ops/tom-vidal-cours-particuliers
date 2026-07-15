@@ -17,7 +17,7 @@ export default function CreditImpot() {
             <div className="max-w-4xl mx-auto px-4 py-8">
                 
                 <div className="mb-6">
-                    <Link to="/" className="text-spindle-800 hover:underline font-bold text-sm flex items-center gap-2">
+                    <Link to="/#services" className="text-spindle-800 hover:underline font-bold text-sm flex items-center gap-2">
                         ← Retour à l'accueil
                     </Link>
                 </div>

@@ -8,7 +8,7 @@ export default function AvanceImmediate() {
                 
                 {/* Bouton Retour */}
                 <div className="mb-6">
-                    <Link to="/" className="text-spindle-800 hover:underline font-bold text-sm flex items-center gap-2">
+                    <Link to="/#services" className="text-spindle-800 hover:underline font-bold text-sm flex items-center gap-2">
                         ← Retour à l'accueil
                     </Link>
                 </div>
