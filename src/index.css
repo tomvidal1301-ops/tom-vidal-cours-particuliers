@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette Bleu Pastel (Spindle) */
+  --color-spindle-50: #f1f6fd;
+  --color-spindle-100: #dfeafa;
+  --color-spindle-200: #c7dbf6;
+  --color-spindle-300: #afcef2;
+  --color-spindle-400: #73a6e7;
+  --color-spindle-500: #5387de;
+  --color-spindle-600: #3e6bd2;
+  --color-spindle-700: #3558c0;
+  --color-spindle-800: #30499d;
+  --color-spindle-900: #2c407c;
+  --color-spindle-950: #1f294c;
+
+  /* Palette Bordeaux (Paprika) */
+  --color-paprika-50: #fff1f2;
+  --color-paprika-100: #ffe4e6;
+  --color-paprika-200: #fecdd3;
+  --color-paprika-300: #fda4af;
+  --color-paprika-400: #fb7185;
+  --color-paprika-500: #f43f5e;
+  --color-paprika-600: #e11d48;
+  --color-paprika-700: #be123c;
+  --color-paprika-800: #9f1239;
+  --color-paprika-900: #881337;
+  --color-paprika-950: #4c0519;
+}
