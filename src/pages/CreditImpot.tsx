@@ -4,7 +4,7 @@ import logoSap from '../assets/logo-sap.png';
 
 export default function CreditImpot() {
     const [tax, setTax] = useState<number>(3000);
-    const [hours, setHours] = useState<number>(40);
+    const [hours, setHours] = useState<number>(80);
     const [rate, setRate] = useState<number>(20);
 
     const totalCost = hours * rate;
