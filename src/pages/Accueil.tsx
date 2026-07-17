@@ -158,9 +158,9 @@ const Accueil = () => {
               </p>
               <Link
                 to="/credit-impot"
-                className="bg-spindle-800 text-white text-center px-6 py-4 rounded-xl font-bold hover:bg-spindle-900 transition-colors shadow-sm w-full"
+                className="bg-spindle-800 text-white flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold hover:bg-spindle-900 transition-colors shadow-sm w-full"
               >
-                En savoir plus sur le crédit d'impôt
+                En savoir plus sur le crédit d'impôt <ChevronRight size={20} />
               </Link>
             </div>
 
@@ -177,9 +177,9 @@ const Accueil = () => {
               </p>
               <Link
                 to="/avance-immediate"
-                className="bg-spindle-800 text-white text-center px-6 py-4 rounded-xl font-bold hover:bg-spindle-900 transition-colors shadow-sm w-full"
+                className="bg-spindle-800 text-white flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold hover:bg-spindle-900 transition-colors shadow-sm w-full"
               >
-                En savoir plus sur l'avance immédiate
+                En savoir plus sur l'avance immédiate <ChevronRight size={20} />
               </Link>
             </div>
 
@@ -213,7 +213,7 @@ const Accueil = () => {
           {/* Ligne de contact */}
           <div className="text-center mb-10 flex flex-col items-center">
             <p className="inline-block bg-paprika-800 text-white px-6 py-4 rounded-xl text-sm font-medium shadow-sm">
-              Contactez-moi par appel, SMS au <a href="tel:0781302497" className="font-bold hover:underline">07 81 30 24 97</a> ou par mail à l'adresse{' '}
+              Contactez-moi (appel ou SMS) au <a href="tel:0781302497" className="font-bold hover:underline">07 81 30 24 97</a>, ou par mail à l'adresse{' '}
               <button
                 onClick={handleCopyEmail}
                 className="font-bold hover:text-spindle-200 transition-colors inline-flex items-center gap-1.5 group underline decoration-spindle-400/50 underline-offset-4"
@@ -242,7 +242,7 @@ const Accueil = () => {
             {/* Textes légaux (à gauche sur ordinateur) */}
             <div className="text-center md:text-left space-y-2">
               <p className="font-bold text-sm text-white">Tom Vidal — Micro-Entreprise — SIRET 106 318 249 00013</p>
-              <p className="opacity-90">Agrément Services à la Personne (SAP) — Crédit d'impôt de 50% selon l'article 199 sexdecies du CGI.</p>
+              <p className="opacity-90">Agrément Services à la Personne (n° SAP106318249) — Crédit d'impôt de 50% selon l'article 199 sexdecies du CGI.</p>
               <p className="opacity-60 pt-2">© 2026 Tous droits réservés.</p>
             </div>
 
