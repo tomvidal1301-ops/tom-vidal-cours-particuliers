@@ -25,6 +25,7 @@ echo 🚀 Synchronisation avec le dépôt distant GitHub...
 git push origin main || goto :erreur_push
 
 echo.
+echo 🎉 Commit "%COMMIT_MSG%" réalisé avec succès !
 echo ✅ Opération terminée avec succès. Le déploiement automatisé est en cours.
 exit /b
 
