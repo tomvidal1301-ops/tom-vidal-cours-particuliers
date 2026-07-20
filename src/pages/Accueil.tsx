@@ -76,7 +76,7 @@ const Accueil = () => {
       </header>
 
       {/* Parcours Section (Fond Blanc) */}
-      <section id="parcours" className="bg-white py-24 px-8 scroll-mt-16">
+      <section id="parcours" className="bg-white py-10 px-8 scroll-mt-16">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-12 text-spindle-950">
             Un parcours d'excellence 100% toulousain
@@ -119,7 +119,7 @@ const Accueil = () => {
       </section>
 
       {/* SAP / Avantage Section Repensée (Fond Pastel) */}
-      <section id="services" className="bg-spindle-50 py-24 px-8 scroll-mt-16">
+      <section id="services" className="bg-spindle-50 py-10 px-8 scroll-mt-16">
         <div className="max-w-5xl mx-auto">
 
           {/* En-tête centré */}
@@ -207,11 +207,11 @@ const Accueil = () => {
       </section>
 
       {/* Footer Complet avec Contact, Mentions Légales et Logo SAP */}
-      <footer id="contact" className="bg-spindle-950 pt-10 pb-8 px-8 text-spindle-200 text-xs">
+      <footer id="contact" className="bg-spindle-950 pt-10 pb-24 px-8 text-spindle-200 text-xs">
         <div className="max-w-6xl mx-auto">
 
           {/* Ligne de contact */}
-          <div className="text-center mb-10 flex flex-col items-center">
+          <div className="text-center mb-0 flex flex-col items-center">
             <p className="inline-block bg-paprika-800 text-white px-6 py-4 rounded-xl text-sm font-medium shadow-sm">
               Contactez-moi (appel ou SMS) au <a href="tel:0781302497" className="font-bold hover:underline">07 81 30 24 97</a>, ou par mail à l'adresse{' '}
               <button
@@ -238,7 +238,7 @@ const Accueil = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-spindle-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-t border-spindle-800 pt-6">
             {/* Textes légaux (à gauche sur ordinateur) */}
             <div className="text-center md:text-left space-y-2">
               <p className="font-bold text-sm text-white">Tom Vidal — Micro-Entreprise — SIRET 106 318 249 00013</p>
